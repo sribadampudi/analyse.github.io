@@ -1,85 +1,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Property Analysis Tool</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        .container {
-            max-width: 600px;
-            margin: auto;
-        }
-        input {
-            margin-bottom: 10px;
-            padding: 8px;
-            width: 100%;
-        }
-        button {
-            padding: 10px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #45a049;
-        }
-        .results {
-            margin-top: 20px;
-        }
-    </style>
+    <title>6516 Amador Valley Blvd Dublin, CA 94568</title>
 </head>
 <body>
-    <div class="container">
-        <h1>Property Analysis Tool</h1>
-        <label for="propertyPrice">Property Price ($):</label>
-        <input type="number" id="propertyPrice" placeholder="Enter property price">
-
-        <label for="downPayment">Down Payment (%):</label>
-        <input type="number" id="downPayment" placeholder="Enter down payment percentage">
-
-        <label for="loanTerm">Loan Term (years):</label>
-        <input type="number" id="loanTerm" placeholder="Enter loan term">
-
-        <label for="interestRate">Annual Interest Rate (%):</label>
-        <input type="number" id="interestRate" step="0.01" placeholder="Enter annual interest rate">
-
-        <label for="monthlyRent">Expected Monthly Rent ($):</label>
-        <input type="number" id="monthlyRent" placeholder="Enter expected monthly rent">
-
-        <button onclick="analyzeProperty()">Analyze Property</button>
-
-        <div class="results" id="results"></div>
-    </div>
-
-    <script>
-        function analyzeProperty() {
-            const propertyPrice = parseFloat(document.getElementById('propertyPrice').value);
-            const downPayment = parseFloat(document.getElementById('downPayment').value) / 100;
-            const loanTerm = parseInt(document.getElementById('loanTerm').value);
-            const interestRate = parseFloat(document.getElementById('interestRate').value) / 100;
-            const monthlyRent = parseFloat(document.getElementById('monthlyRent').value);
-
-            const loanAmount = propertyPrice * (1 - downPayment);
-            const monthlyInterestRate = interestRate / 12;
-            const numberOfPayments = loanTerm * 12;
-
-            const monthlyMortgagePayment = (loanAmount * monthlyInterestRate) / (1 - Math.pow(1 + monthlyInterestRate, -numberOfPayments));
-            const totalCost = downPayment * propertyPrice + monthlyMortgagePayment * numberOfPayments;
-            const annualIncome = monthlyRent * 12;
-            const roi = (annualIncome / totalCost) * 100;
-
-            document.getElementById('results').innerHTML = `
-                <h2>Analysis Results</h2>
-                <p><strong>Loan Amount:</strong> $${loanAmount.toFixed(2)}</p>
-                <p><strong>Monthly Mortgage Payment:</strong> $${monthlyMortgagePayment.toFixed(2)}</p>
-                <p><strong>Total Cost (over ${loanTerm} years):</strong> $${totalCost.toFixed(2)}</p>
-                <p><strong>Annual Income:</strong> $${annualIncome.toFixed(2)}</p>
-                <p><strong>ROI:</strong> ${roi.toFixed(2)}%</p>
-            `;
-        }
-    </script>
+    <body bgcolor="slategrey">
+        <picture>
+            <h1 align="center">6516 Amador Valley Blvd Dublin, CA 94568</h1>
+            <img src="https://i.postimg.cc/DZtDBthS/magni-logo.jpg" width=400 height=300>
+  <img src="https://i.postimg.cc/TY6FbJ1c/anil-lakkyreddy.jpg" width=300 height=300 align="right"/>
+</picture>
 </body>
+    <body>
+        <hr color="black"></hr>
+        <h2 align="right"><u>Founder</u><br>Anil lakkyreddy</br>Mobile: 925-216-8557<br>License #: 01895131</br>Email: anil.reddy.realtor@gmail.com</br>Meet with us: <a href="https://anilre.com">click here</a></h2>
+  <marquee direction="right"><img src="https://i.postimg.cc/8z7TXVQH/aeroplane.gif" width=300 height=190/></marquee>
+        <style>
+        .menu-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        nav {
+            background-color: #333;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 14px 20px;
+            display: block;
+            border-right: 1px solid #444;
+        }
+        nav ul li a:last-child {
+            border-right: none;
+        }
+        nav ul li a:hover {
+            background-color: #575757;
+        }
+    </style>
+<!-- Navigation Menu Section -->
+<div class="menu-container">
+    <nav>
+        <ul>
+            <li><a href="https://magnirealty.com/testimonials/">Testimonials</a></li>
+            <li><a href="https://magnirealty.com/about-us/">About us</a></li>
+            <li><a href="https://magnirealty.com/homes-for-sale-search/?boardId=2&minListPrice=600000&bedrooms=2&bathCount=2&propertyType=SFR,CND&status=active&sort=importDate&cityId=215,244,724,837">Search homes</a></li>
+            <li><a href="https://magnirealty.com/featured-properties/">sold by us</a></li>
+        </ul>
+    </nav>
+</div>
+        <h1>Welcome to 1.5% commission<br>Bay Area Luxury brokerage</br>At Magni realty</h1>
+<h2><p>Magni Realty, under the leadership of Anil LakkyReddy, caters to a thriving clientele, including homeowners, potential buyers, landlords, investors, and developers. Committed to providing data-driven, transparent, and empathetic real estate guidance, our team stands out.</p></h2>
+    <!-- Photo Gallery Section -->
+<h2><center><u>Photo Gallery</u></center></h2>
+<div class="gallery">
+    <div class="gallery-item">
+        <img src="https://i.postimg.cc/W4Pgs87Q/amador1.webp" alt="Photo 1" width=700 height=500>
+        <img src="https://i.postimg.cc/rsbR3NmZ/amador2.webp" alt="Photo 2" width=700 height=500>
+        <img src="https://i.postimg.cc/yNhHGmn1/amador3.webp" width=700 height=500>
+        <img src="https://i.postimg.cc/9095Gy4H/amador4.webp" width=700 height=500>
+        <img src="https://i.postimg.cc/9FGH0t5G/amador5.webp" width=700 height=500>
+        <img src="https://i.postimg.cc/VkmQCrm2/amador6.webp" width=700 height=500>
+    </div>
+</div>
+<!-- Property info section -->
+<h1 align="center">Property information</h1>
+<big><p>Welcome to the 3 Beds, 2.5 Baths, 1300 Sq Ft Townhouse with a fenced Front Yard in a highly sought-after location. Walk to all 3 schools Elementary, Middle and High. Some of the highlights include Freshly Painted throughout, Lots of natural light, Open Floor Plan, Full Tile Backsplash in Kitchen, Breakfast Bar, Laminate Flooring, Cozy Fireplace, Inside Laundry, Included Appliances Refrigerator, Washer, Dryer, Spacious Bedrooms with Mirrored Closet Doors, Ceiling Fans, Views of the Community Park, Attached 2-car garage with a Long driveway, New Epoxy flooring in the garage. The Front Patio is beautifully landscaped and private with a Tall Fence, perfect for relaxing outdoors. Move in Ready. Best location near the Park and the Pool. Easy access to popular Iron Horse Trail, Dog Park, BART transportation and 580/680 Freeways. HOA fee also includes Water, Sewer and Trash Services. No additional Mello-Roos tax. Do not miss this awesome 2-story, 3-bed Townhouse, with a Yard and Driveway in the Best location.</P></big>
+<hr color="black"><h2><u>Profile</u></h2></hr>
+<table border=1 cellpaddding=3 cellspacing=3 bordercolor="black">
+<tr>
+<td>Address</td>
+<td>6516 Amador Valley Boulevard</td>
+</tr>
+<tr>
+<td>City</td>
+<td>Dublin</td>
+</tr>
+<tr>
+<td>State</td>
+<td>California</td>
+</tr>
+<tr>
+<td>Zip</td>
+<td>94568</td>
+</tr>
+<tr>
+<td>Beds</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Baths</td>
+<td>2.5</td>
+</tr>
+<tr>
+<td>Square footage</td>
+<td>1300</td>
+</tr>
+<tr>
+<td>Year built</td>
+<td>1986</td>
+</tr>
+<tr>
+<td>List price</td>
+<td>$898,500</td>
+</tr>
+<tr>
+<td>Elementary school</td>
+<td>Frederiksen Elementary School</td>
+</tr>
+<tr>
+<td>Middle school</td>
+<td>Wells Middle School</td>
+</tr>
+<tr>
+<td>High school</td>
+<td>Dublin high school</td>
+</tr>
+<tr>
+<td>Elementary school dstrict</td>
+<td>Dublin Unified School District</td>
+</tr>
+<tr>
+<td>Construction type</td>
+<td>Wood</td>
+</tr>
+<tr>
+<td>County land used</td>
+<td>Condo minium-Town house style</td>
+</tr>
+</table>
+</body>
+</head>
+    
+    
+    </body>
 </html>
